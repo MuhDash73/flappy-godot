@@ -18,11 +18,12 @@ texture = ExtResource("1_5p55f")
 
 [node name="Label" type="Label" parent="." unique_id=1172490427]
 layout_mode = 1
-offset_left = 894.0
-offset_top = 429.0
-offset_right = 997.0
-offset_bottom = 452.0
-text = "Flappy Godot"
+offset_left = 776.0
+offset_top = 410.0
+offset_right = 1144.0
+offset_bottom = 459.0
+text = "Flappy Godot
+Space to start(unless bugged im trying to fix ok)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -40,4 +41,4 @@ offset_left = 759.0
 offset_top = 716.0
 offset_right = 1151.0
 offset_bottom = 739.0
-text = "High Score: "
+text = "Highscore: "

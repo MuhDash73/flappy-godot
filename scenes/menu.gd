@@ -1,9 +1,8 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
+var high_score = 0
 
 func change_score(score):
-	$Score.text = "score: " + str(score)
+	high_score = max(score, high_score)
+	$Score.text = "Score: " + str(score)
+	$HScore.text = "Highscore: " + str(high_score)
