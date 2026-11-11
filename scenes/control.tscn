@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://ci6xmn6ak8wak"]
+
+[ext_resource type="Texture2D" uid="uid://djrcjdvufolbh" path="res://icon.svg" id="1_5p55f"]
+[ext_resource type="Script" uid="uid://ctm5r817l7ina" path="res://scenes/menu.gd" id="1_r67kn"]
+
+[node name="Control" type="Control" unique_id=1343649139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r67kn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=261903277]
+position = Vector2(954, 587)
+texture = ExtResource("1_5p55f")
+
+[node name="Label" type="Label" parent="." unique_id=1172490427]
+layout_mode = 1
+offset_left = 894.0
+offset_top = 429.0
+offset_right = 997.0
+offset_bottom = 452.0
+text = "Flappy Godot"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score" type="Label" parent="." unique_id=1299068974]
+layout_mode = 0
+offset_left = 759.0
+offset_top = 687.0
+offset_right = 1151.0
+offset_bottom = 710.0
+text = "Score: "
+
+[node name="HScore" type="Label" parent="." unique_id=1352442049]
+layout_mode = 0
+offset_left = 759.0
+offset_top = 716.0
+offset_right = 1151.0
+offset_bottom = 739.0
+text = "High Score: "

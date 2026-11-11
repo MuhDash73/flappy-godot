@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://d1fgq7p0cv5oi"]
+
+[ext_resource type="Script" uid="uid://bik1yeuc2ewro" path="res://scripts/pipes.gd" id="1_3ahhd"]
+[ext_resource type="Texture2D" uid="uid://djrcjdvufolbh" path="res://icon.svg" id="1_f17p0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwycx"]
+size = Vector2(128, 128)
+
+[node name="pipe" type="CharacterBody2D" unique_id=2100165888]
+script = ExtResource("1_3ahhd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=483935985]
+position = Vector2(0, 800)
+scale = Vector2(1, 10)
+texture = ExtResource("1_f17p0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1025969855]
+position = Vector2(0, 800)
+scale = Vector2(1, 10)
+shape = SubResource("RectangleShape2D_pwycx")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=787352322]
+position = Vector2(0, -800)
+scale = Vector2(1, 10)
+texture = ExtResource("1_f17p0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1859475350]
+position = Vector2(0, -800)
+scale = Vector2(1, 10)
+shape = SubResource("RectangleShape2D_pwycx")
